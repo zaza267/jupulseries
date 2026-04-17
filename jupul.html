@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JUPUL 1</title>
+
+<style>
+body{margin:0;font-family:Georgia,serif;background:#f5efe6;color:#3e2f26;overflow:hidden}
+
+.wrapper{display:flex;width:100vw;height:100vh;overflow-x:auto;scroll-snap-type:x mandatory}
+.page{min-width:100vw;height:100vh;padding:25px;box-sizing:border-box;scroll-snap-align:start;overflow-y:auto}
+.page:nth-child(odd){background:#fffaf3}
+.page:nth-child(even){background:#f1e6d6}
+
+h1{text-align:center;margin-top:80px}
+h2{margin-top:40px;color:#6d4c41}
+.text{line-height:1.8;margin-top:20px}
+
+/* NAV */
+.nav{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:10px}
+.nav button{padding:10px 15px;border:none;border-radius:8px;background:#6d4c41;color:white}
+.indicator{font-weight:bold}
+
+/* FAB */
+.fab{position:fixed;left:15px;top:15px;background:#6d4c41;color:#fff;padding:10px;border-radius:10px;cursor:pointer}
+
+/* SIDEBAR */
+.sidebar{
+position:fixed;
+top:0;
+left:-260px;
+width:220px;
+height:100%;
+background:#3e2f26;
+color:white;
+padding:20px;
+transition:0.3s;
+z-index:10;
+}
+.sidebar.open{left:0}
+
+.close-btn{
+position:absolute;
+top:10px;
+right:10px;
+cursor:pointer;
+font-size:18px;
+}
+
+.sidebar a{
+display:block;
+margin:15px 0;
+color:white;
+text-decoration:none;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="fab" onclick="toggleMenu()">☰</div>
+
+<div class="sidebar" id="sidebar">
+<div class="close-btn" onclick="toggleMenu()">✕</div>
+<h3>JUPUL SERIES</h3>
+<a onclick="goPage(0);toggleMenu()">JUPUL 1</a>
+<a onclick="goPage(total-1);toggleMenu()">JUPUL 2</a>
+</div>
+
+<div class="wrapper" id="wrapper">
+
+<!-- COVER -->
+<div class="page">
+<h1>JUPUL 1</h1>
+<p style="text-align:center"><i>Di Balik Seragam Putih Abu-Abu</i></p>
+</div>
+
+<!-- DAFTAR ISI -->
+<div class="page">
+<h2>Daftar Isi</h2>
+<p onclick="goPage(2)">BAB 1 - Pertemuan yang Tak Disengaja</p>
+<p onclick="goPage(5)">BAB 2 - Keputusan yang Terlalu Cepat</p>
+<p onclick="goPage(8)">BAB 3 - Seleksi yang Menghancurkan</p>
+<p onclick="goPage(11)">BAB 4 - Natal: Awal Mimpi Buruk</p>
+<p onclick="goPage(14)">BAB 5 - Retakan</p>
+<p onclick="goPage(17)">BAB 6 - Badai yang Akan Datang</p>
+</div>
+
+<!-- BAB 1 HALAMAN 1 -->
+<div class="page"><h2>BAB 1 – Pertemuan yang Tak Disengaja</h2><div class="text">
+Pagi itu, kota Medan belum sepenuhnya terbangun.<br><br>
+Udara masih menyimpan sisa dingin malam, sementara cahaya matahari perlahan menyelinap di antara gedung-gedung sekolah. Gerbang SMA Santo Thomas 1 Medan terbuka lebar, menyambut ratusan siswa baru dengan wajah-wajah yang penuh harapan… dan sedikit ketakutan.<br><br>
+Langkah kaki terdengar bersahutan.<br><br>
+Suara obrolan kecil memenuhi udara.<br><br>
+Beberapa tertawa, beberapa diam.<br><br>
+
+Di antara semua itu, berdiri seorang laki-laki di depan papan pengumuman.<br><br>
+Matanya fokus membaca nama demi nama.<br><br>
+Tangannya terlihat tenang di saku, tapi jari-jarinya bergerak pelan—tanda gugup yang tidak ingin ia tunjukkan.<br><br>
+“Ketemu?”<br><br>
+Suara itu datang dari samping.<br><br>
+Dia menoleh sedikit.<br><br>
+“Oryza.”<br><br>
+Jawabannya singkat.<br><br>
+“Ewaldo,” balas yang lain.<br><br>
+Mereka saling mengangguk.<br><br>
+Lalu kembali diam.<br><br>
+Seolah pertemuan itu… tidak penting.<br><br>
+Padahal, itu adalah awal dari segalanya.
+</div></div>
+
+<!-- BAB 1 HALAMAN 2 -->
+<div class="page"><div class="text">
+Di sisi lain koridor, seorang perempuan berdiri sambil menggenggam tali tasnya.<br><br>
+
+Matanya bergerak cepat, memperhatikan orang-orang di sekitarnya.<br><br>
+
+“Aku Asia…”<br><br>
+
+Suaranya pelan.<br><br>
+
+Hampir seperti takut terdengar.<br><br>
+
+Seorang perempuan lain menatapnya, lalu tersenyum hangat.<br><br>
+
+“Jessenia.”<br><br>
+
+Senyum itu sederhana, tapi cukup untuk menenangkan.<br><br>
+
+“Pertama kali di sini?” tanya Jessenia.<br><br>
+
+Asia mengangguk.<br><br>
+
+“Iya…”<br><br>
+
+“Aku juga.”<br><br>
+
+Mereka terdiam.<br><br>
+
+Namun kali ini, diamnya tidak terasa asing.<br><br>
+
+Di tempat lain, Gregorius berjalan dengan langkah tegas, sementara Gavra di belakangnya tampak lebih santai.<br><br>
+
+“Eh, sorry,” kata Gavra saat hampir menabrak seseorang.<br><br>
+
+Deven berjalan sendiri, memegang buku meskipun belum ada pelajaran.<br><br>
+
+Seolah itu satu-satunya cara untuk tetap merasa tenang.
+</div></div>
+
+<!-- BAB 1 HALAMAN 3 -->
+<div class="page"><div class="text">
+Di dalam kelas, suasana tidak jauh berbeda.<br><br>
+
+Princilla sudah duduk rapi.<br><br>
+
+Bukunya tersusun.<br><br>
+
+Pena sejajar.<br><br>
+
+Segalanya terlihat terkontrol.<br><br>
+
+Berbeda dengan Theresia di sebelahnya.<br><br>
+
+Tangannya gelisah.<br><br>
+
+“Kamu gugup?” tanya Princilla.<br><br>
+
+Theresia tersenyum kecil.<br><br>
+
+“Kelihatan ya?”<br><br>
+
+Princilla hanya mengangguk.<br><br>
+
+Maria masuk ke kelas dengan langkah tenang.<br><br>
+
+Namun matanya memperhatikan segalanya.<br><br>
+
+Orang-orang.<br><br>
+
+Suasana.<br><br>
+
+Detail kecil.<br><br>
+
+Hari pertama berlalu dengan cepat.<br><br>
+
+Perkenalan.<br><br>
+
+Instruksi.<br><br>
+
+Aturan.<br><br>
+
+Ketika bel pulang berbunyi…<br><br>
+
+Mereka pulang.<br><br>
+
+Masih sebagai “aku”.<br><br>
+
+Belum sebagai “kita”.
+</div></div>
+
+<!-- BAB 2 -->
+<div class="page"><h2>BAB 2 – Keputusan yang Terlalu Cepat</h2><div class="text">
+Hari itu terasa panas.<br><br>
+
+Udara di kelas seperti berhenti bergerak.<br><br>
+
+Beberapa siswa mulai bosan, menyandarkan kepala ke meja.<br><br>
+
+Tiba-tiba—<br><br>
+
+“Perhatian kepada seluruh siswa kelas 10…”<br><br>
+
+Suara dari speaker membuat semua langsung diam.<br><br>
+
+“Pendaftaran OSIS telah dibuka.”<br><br>
+
+Beberapa detik hening.<br><br>
+
+Lalu kelas langsung ramai.<br><br>
+
+“OSIS?”<br><br>
+“Capek katanya…”<br><br>
+“Seniornya galak banget…”<br><br>
+
+Di belakang, Gavra menoleh.<br><br>
+
+“Daftar gak?”<br><br>
+
+Oryza tidak langsung menjawab.<br><br>
+
+Matanya masih ke depan.<br><br>
+
+“Coba aja.”
+</div></div>
+
+<div class="page"><div class="text">
+“Coba aja.”<br><br>
+“Serius lu?” tanya Gavra.<br><br>
+
+“Kenapa enggak?”<br><br>
+
+“Ya… gue denger serem.”<br><br>
+
+Oryza tersenyum tipis.<br><br>
+
+“Semua juga serem kalau belum dicoba.”<br><br>
+
+Di kelas lain…<br><br>
+
+“Aku mau daftar,” kata Princilla tegas.<br><br>
+
+Theresia langsung kaget.<br><br>
+
+“Hah? Aku takut…”<br><br>
+
+Maria menoleh.<br><br>
+
+“Kalau kita bareng, gak takut.”<br><br>
+
+Theresia diam.<br><br>
+
+Kalimat itu sederhana.<br><br>
+
+Tapi cukup.
+</div></div>
+
+<div class="page"><div class="text">
+Di sudut sekolah, Asia memegang formulir.<br><br>
+
+Tangannya sedikit gemetar.<br><br>
+
+“Aku gak tau kenapa…”<br><br>
+
+Jessenia menatapnya.<br><br>
+
+“…tapi aku pengen daftar.”<br><br>
+
+“Takut?”<br><br>
+
+Asia mengangguk.<br><br>
+
+“Iya…”<br><br>
+
+Jessenia tersenyum.<br><br>
+
+“Ya udah. Kita takut bareng.”<br><br>
+
+Hari itu…<br><br>
+
+Tanpa sadar…<br><br>
+
+Enam belas orang membuat keputusan yang sama.<br><br>
+
+Dan sejak itu…<br><br>
+
+Semuanya berubah
+</div></div>
+
+<!-- BAB 3 -->
+<div class="page"><h2>BAB 3 – Seleksi yang Menghancurkan</h2><div class="text">
+Ruangan itu dingin.<br><br>
+
+Terlalu dingin.<br><br>
+
+Namun bukan karena AC.<br><br>
+
+Di depan, senior duduk berjajar.<br><br>
+
+Tatapan mereka tajam.<br><br>
+
+Tanpa senyum.<br><br>
+
+“Masuk.”<br><br>
+
+Deven melangkah.<br><br>
+
+Duduk.<br><br>
+
+“Kenapa kamu daftar OSIS?”<br><br>
+
+“…saya ingin belajar.”<br><br>
+
+“Belajar?”<br><br>
+
+Senior itu menatapnya tajam.<br><br>
+
+“Kalau cuma mau belajar… di kelas aja.”<br><br>
+
+Deven terdiam.
+</div></div>
+
+<div class="page"><div class="text">
+Di luar, Asia menunggu.<br><br>
+
+Kakinya bergerak gelisah.<br><br>
+
+“Asia.”<br><br>
+
+Namanya dipanggil.<br><br>
+
+Dia masuk.<br><br>
+
+Duduk.<br><br>
+
+Menunduk.<br><br>
+
+“SUARA KAMU KERASIN!”<br><br>
+
+Bentakan itu membuatnya kaget.<br><br>
+
+“Saya… saya mau berkembang…”<br><br>
+
+“NGOMONG YANG JELAS!”<br><br>
+
+Air matanya mulai jatuh.
+</div></div>
+
+<div class="page"><div class="text">
+Saat keluar…<br><br>
+
+Asia langsung menangis.<br><br>
+
+“Aku dimarahin…”<br><br>
+
+Jessenia memeluknya.<br><br>
+
+“Udah… kamu gak sendiri.”<br><br>
+
+Satu per satu keluar dari ruangan.<br><br>
+
+Dengan wajah berbeda.<br><br>
+
+Lebih diam.<br><br>
+
+Lebih lemah.<br><br>
+
+Namun tidak ada yang mundur.
+</div></div>
+
+<!-- BAB 4 -->
+<div class="page"><h2>BAB 4 – Natal: Awal Mimpi Buruk</h2><div class="text">
+Ruangan rapat malam itu terasa berat.<br><br>
+
+Semua duduk diam.<br><br>
+
+Proposal sudah di tangan senior.<br><br>
+
+“Ini kerjaan kalian?”<br><br>
+
+Tidak ada jawaban.<br><br>
+
+BRAK!<br><br>
+
+Map dibanting ke meja.<br><br>
+
+“INI BERANTAKAN!”
+</div></div>
+
+<div class="page"><div class="text">
+Princilla langsung menunduk.<br><br>
+
+“Kami sudah—”<br><br>
+
+“DIAM!”<br><br>
+
+Theresia mulai gemetar.<br><br>
+
+Air matanya jatuh.<br><br>
+
+“LIAT INI!”<br><br>
+
+“Format kacau!”<br><br>
+
+“Isi gak jelas!”
+</div></div>
+
+<div class="page"><div class="text">
+Asia menahan tangis.<br><br>
+
+Namun akhirnya jatuh juga.<br><br>
+
+Maria menggenggam tangannya.<br><br>
+
+“Kalau gak sanggup…”<br><br>
+
+Senior itu menatap dingin.<br><br>
+
+“Keluar.”<br><br>
+
+Ruangan itu…<br><br>
+
+Hancur dalam diam.
+</div></div>
+
+<!-- BAB 5 -->
+<div class="page"><h2>BAB 5 – Retakan</h2><div class="text">
+Malam itu mereka tidak pulang.<br><br>
+
+Mereka berkumpul.<br><br>
+
+Duduk melingkar.<br><br>
+
+“Aku capek…”<br><br>
+
+Princilla bicara.<br><br>
+
+Theresia menangis.<br><br>
+
+“Aku takut…”
+</div></div>
+
+<div class="page"><div class="text">
+“Aku mau keluar aja…”<br><br>
+
+Semua langsung diam.<br><br>
+
+Deven menunduk.<br><br>
+
+“Lu serius?” tanya Gregorius.
+</div></div>
+
+<div class="page"><div class="text">
+Oryza berdiri.<br><br>
+
+“Kita 16.”<br><br>
+
+“Kalau satu jatuh…”<br><br>
+
+“Yang lain angkat.”<br><br>
+
+“Kalau mau keluar…”<br><br>
+
+Dia berhenti.<br><br>
+
+“Jangan karena kita kalah.”<br><br>
+
+Tidak ada yang keluar malam itu.<br><br>
+
+Namun…<br><br>
+
+Mereka tidak lagi sama.
+</div></div>
+
+<!-- BAB 6 -->
+<div class="page"><h2>BAB 6 – Badai yang Akan Datang</h2><div class="text">
+Hari-hari berlalu.<br><br>
+
+Namun tekanan tidak hilang.<br><br>
+
+Tatapan mereka berubah.<br><br>
+
+Lebih serius.<br><br>
+
+Lebih lelah.
+</div></div>
+
+<div class="page"><div class="text">
+Deadline semakin dekat.<br><br>
+
+Senior semakin keras.<br><br>
+
+“INI BELUM SIAP?!”
+</div></div>
+
+<div class="page"><div class="text">
+Sesuatu akan terjadi.<br><br>
+
+Kesalahan besar.<br><br>
+
+Yang akan membuat mereka:<br><br>
+
+saling menyalahkan<br><br>
+hampir pecah<br><br>
+kehilangan satu orang<br><br>
+
+Dan kali ini…<br><br>
+
+Tidak semua akan bertahan.<br><br>
+BERSAMBUNG…
+</div></div>
+
+<!-- JUPUL 2 -->
+<div class="page">
+<h1>JUPUL 2</h1>
+<p style="text-align:center">COMING SOON</p>
+</div>
+
+</div>
+
+<div class="nav">
+<button onclick="prevPage()">◀</button>
+<div class="indicator" id="indicator"></div>
+<button onclick="nextPage()">▶</button>
+</div>
+
+<script>
+const wrapper=document.getElementById('wrapper')
+const total=wrapper.children.length
+let index=0
+
+function update(){document.getElementById('indicator').innerText=(index+1)+" / "+total}
+
+function nextPage(){if(index<total-1){index++}wrapper.scrollTo({left:index*window.innerWidth,behavior:'smooth'});update()}
+function prevPage(){if(index>0){index--}wrapper.scrollTo({left:index*window.innerWidth,behavior:'smooth'});update()}
+function goPage(i){index=i;wrapper.scrollTo({left:index*window.innerWidth,behavior:'smooth'});update()}
+
+wrapper.addEventListener('scroll',()=>{
+index=Math.round(wrapper.scrollLeft/window.innerWidth)
+update()
+})
+
+function toggleMenu(){
+document.getElementById('sidebar').classList.toggle('open')
+}
+
+update()
+</script>
+
+</body>
+</html>
