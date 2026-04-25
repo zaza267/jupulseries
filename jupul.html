@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>JUPUL SERIES</title>
+<title>JUPUL 1</title>
 
 <style>
 body{margin:0;font-family:Georgia,serif;background:#f5efe6;color:#3e2f26;overflow:hidden}
@@ -56,6 +56,20 @@ color:white;
 text-decoration:none;
 cursor:pointer;
 }
+
+.cover-page{
+padding:0;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#000; /* biar ada space hitam kalau ada sisa */
+}
+
+.cover-img{
+width:100%;
+height:100%;
+object-fit:contain; /* INI YANG BIKIN FULL KELIHATAN */
+}
 </style>
 </head>
 
@@ -66,13 +80,18 @@ cursor:pointer;
 <div class="sidebar" id="sidebar">
 <div class="close-btn" onclick="toggleMenu()">✕</div>
 <h3>JUPUL SERIES</h3>
-<a onclick="goPage(0);toggleMenu()">JUPUL 1</a>
+<a onclick="goPage(0);toggleMenu()">JUPUL Junior Cover</a>
+<a onclick="goPage(1);toggleMenu()">JUPUL 1</a>
 <a onclick="goPage(total -59);toggleMenu()">JUPUL 2</a>
 <a onclick="goPage(total -33);toggleMenu()">JUPUL 3</a>
 <a onclick="goPage(total -1);toggleMenu()">JUPUL 4</a>
 </div>
 
 <div class="wrapper" id="wrapper">
+
+<div class="page cover-page">
+<img src="Cover Jupul Series.jpeg" class="cover-img">
+</div>
 
 <!-- COVER -->
 <div class="page">
@@ -83,12 +102,12 @@ cursor:pointer;
 <!-- DAFTAR ISI -->
 <div class="page">
 <h2>Daftar Isi</h2>
-<p onclick="goPage(2)">BAB 1 - Pertemuan yang Tak Disengaja</p>
-<p onclick="goPage(5)">BAB 2 - Keputusan yang Terlalu Cepat</p>
-<p onclick="goPage(8)">BAB 3 - Seleksi yang Menghancurkan</p>
-<p onclick="goPage(11)">BAB 4 - Natal: Awal Mimpi Buruk</p>
-<p onclick="goPage(14)">BAB 5 - Retakan</p>
-<p onclick="goPage(17)">BAB 6 - Badai yang Akan Datang</p>
+<p onclick="goPage(3)">BAB 1 - Pertemuan yang Tak Disengaja</p>
+<p onclick="goPage(6)">BAB 2 - Keputusan yang Terlalu Cepat</p>
+<p onclick="goPage(9)">BAB 3 - Seleksi yang Menghancurkan</p>
+<p onclick="goPage(12)">BAB 4 - Natal: Awal Mimpi Buruk</p>
+<p onclick="goPage(15)">BAB 5 - Retakan</p>
+<p onclick="goPage(18)">BAB 6 - Badai yang Akan Datang</p>
 </div>
 
 <!-- BAB 1 HALAMAN 1 -->
@@ -534,12 +553,12 @@ BERSAMBUNG…
 <!-- DAFTAR ISI -->
 <div class="page">
 <h2>Daftar Isi</h2>
-<p onclick="goPage(22)">BAB 1 - JUPUL yang Sebenarnya</p>
-<p onclick="goPage(26)">BAB 2 - Tidak Pernah Cukup</p>
-<p onclick="goPage(31)">BAB 3 - Malam H-1 (Hujan yang Menguji Segalanya)</p>
-<p onclick="goPage(35)">BAB 4 - Hampir Pecah</p>
-<p onclick="goPage(38)">BAB 5 - Hari Nataru (Bangkit di Tengah Tekanan)</p>
-<p onclick="goPage(43)">BAB 6 - Setelah Semua (Tenang Sebelum Tegang)</p>
+<p onclick="goPage(23)">BAB 1 - JUPUL yang Sebenarnya</p>
+<p onclick="goPage(27)">BAB 2 - Tidak Pernah Cukup</p>
+<p onclick="goPage(32)">BAB 3 - Malam H-1 (Hujan yang Menguji Segalanya)</p>
+<p onclick="goPage(36)">BAB 4 - Hampir Pecah</p>
+<p onclick="goPage(39)">BAB 5 - Hari Nataru (Bangkit di Tengah Tekanan)</p>
+<p onclick="goPage(44)">BAB 6 - Setelah Semua (Tenang Sebelum Tegang)</p>
 </div>
 
 <div class="page"><h2>BAB 1 – JUPUL yang Sebenarnya</h2><div class="text">
@@ -882,14 +901,14 @@ BERSAMBUNG…
 <!-- DAFTAR ISI -->
 <div class="page">
 <h2>Daftar Isi</h2>
-<p onclick="goPage(48)">BAB 1 - Pintu yang Tidak Ingin Dibuka</p>
-<p onclick="goPage(52)">BAB 2 - Lift yang Terlalu Sempit</p>
-<p onclick="goPage(56)">BAB 3 - Evaluasi yang Meledak</p>
-<p onclick="goPage(60)">BAB 4 - Lantai Empat yang Meledak</p>
-<p onclick="goPage(65)">BAB 5 - Notifikasi yang Menghantam</p>
-<p onclick="goPage(68)">BAB 6 - Telepon yang Menekan</p>
-<p onclick="goPage(71)">BAB 7 - Pulang dengan Beban</p>
-<p onclick="goPage(74)">BAB 8 - Telepon Tengah Malam</p>
+<p onclick="goPage(49)">BAB 1 - Pintu yang Tidak Ingin Dibuka</p>
+<p onclick="goPage(53)">BAB 2 - Lift yang Terlalu Sempit</p>
+<p onclick="goPage(57)">BAB 3 - Evaluasi yang Meledak</p>
+<p onclick="goPage(61)">BAB 4 - Lantai Empat yang Meledak</p>
+<p onclick="goPage(66)">BAB 5 - Notifikasi yang Menghantam</p>
+<p onclick="goPage(69)">BAB 6 - Telepon yang Menekan</p>
+<p onclick="goPage(72)">BAB 7 - Pulang dengan Beban</p>
+<p onclick="goPage(75)">BAB 8 - Telepon Tengah Malam</p>
 </div>
 
 <div class="page"><h2>BAB 1 – Pintu yang Tidak Ingin Dibuka</h2><div class="text">
@@ -921,7 +940,7 @@ Oryza menghela napas panjang. Ia tahu ini cuma menunda. Tapi melihat wajah-wajah
 </div></div>
 
 <div class="page"><div class="text">
-Beberapa menit kemudian, pemandangan di lapangan itu berubah drastis.<br><br>
+Beberapa menit kemudian, pemandangan di lorong itu berubah drastis.<br><br>
 JUPUL tiba-tiba jadi “tim paling rajin seangkatan.”<br><br>
 Gavra dan Ewaldo mengangkat kursi dari satu sisi ke sisi lain, lalu kembali lagi ke posisi semula. Gerakannya bahkan terlalu serius untuk sesuatu yang sebenarnya tidak perlu dilakukan.<br><br>
 “Ini kursi udah kita pindahin berapa kali?” bisik Ewaldo.<br><br>
@@ -930,7 +949,7 @@ Gavra jawab santai, “Tiga kali. Target gue lima kali biar keliatan berdedikasi
 Di sisi lain, Asia, Maria, dan Jessenia membawa kantong sampah.<br><br>
 Maria melihat ke dalam plastik. “Ini kosong…”<br><br>
 Asia langsung jawab cepat, “Ya udah, isi aja pakai harapan kita yang udah hancur.”<br><br>
-Jessenia langsung ketawa kecil. “Kejam kali… hilang co rispekkuu”<br><br>
+Jessenia langsung ketawa kecil. “Kejam kali…”<br><br>
 “Realistis,” jawab Asia tanpa ekspresi.<br><br>
 Mereka hampir tertawa—
 </div></div>
